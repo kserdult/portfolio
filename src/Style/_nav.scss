@@ -1,0 +1,39 @@
+.nav{
+    width:80vw;
+    display:flex;
+    position: fixed;
+    .menuIcon {
+        cursor: pointer;
+        margin: 0.5rem 0 0 0.2rem;
+        font-size: 2rem;
+        color:white;
+    }
+    ul {
+        color:white;
+        list-style-type: none;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction:column;
+        transform: translateY(-1.5rem);
+        transition:height 0.7s, transform 0.7s 0.3s ease;
+        height:0vh;
+    }
+    li {
+        height:0vh;
+    }
+    .activeMenu {
+        transform: translateY(0);
+        height:40vh;
+        li {
+            height: 1rem;
+            transition:height 0.7s 0s ease;
+        }
+    }
+}
+/*@media screen and (min-width: 768px) ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+
+}*/

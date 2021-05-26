@@ -1,0 +1,182 @@
+.main {
+    background-color: rgb(17, 17, 17);
+    color:rgb(228, 228, 228);
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .kep {
+        padding-top:2rem;
+        margin-bottom:1rem;
+        display: flex;
+        justify-content: center;
+        img{
+            width:10rem;
+            border-radius: 100%;
+            border:solid black 1rem;
+            //outline: none;
+        }
+    }
+    .information {
+        margin-left:2rem;
+        margin-right:1rem;
+        margin-bottom: 1rem;
+        ul {
+            list-style-type: none;
+        }
+        .ikonok {
+            transform: translateY(0.2rem);
+            margin-right:0.5rem;
+        }
+        .social {
+            list-style-type: none;
+            font-size:1.5rem;
+            display: none;
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        padding:1rem;
+        padding-bottom: 2rem;
+        background-color: rgb(17, 17, 17);
+        p {
+            text-align: center;
+            margin: 0.3rem 0.5rem 1.5rem 0.5rem;
+        }
+        .skills {
+            list-style-type: none;
+            display:flex;
+            justify-content: center;
+            li {
+                margin:0.3rem;
+                padding: 0.2rem;
+                font-size: 0.8rem;
+                height: 1.4rem;
+                border-radius: 10%;
+                border: lightblue solid 0.1rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+        .cvdownload {
+            text-align: center;
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 0.5rem 2rem 1rem 2rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            background-color: lightblue;
+            border-radius: 30px;
+            border:none;
+            color: white;
+        }
+        .downloadIcon {
+            font-size: 2rem;
+            transform: translateY(0.5rem);
+        }
+    }
+    .wrap {
+        .developImage {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main {
+        .mainPart{
+            display:flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            .kep {
+                img {
+                    width: 15rem;
+                }
+            }
+            .information {
+                margin-top:5rem;
+                h1 {
+                    text-align: left;
+                }
+                h2 {
+                    text-align: left;
+                }
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+            .social {
+                display:flex;
+                justify-content: space-around;
+                a  {
+                    text-decoration: none;
+                    color:white ;
+                }
+            }
+        }
+        .wrap {
+            //margin:auto;
+            //width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .developImage {
+                margin-left:9rem;
+                margin-right:1rem;
+                display:unset;
+                width:15rem;
+                height:15rem;
+            }
+            .about {
+                padding-left: 10rem;
+                margin-right: 5rem;
+                width:33rem;
+                h3 {
+                    text-align: left;
+                    margin-bottom: 0.3rem;
+                }
+                p {
+                    text-align: left;
+                    margin-left: 0;
+                    margin-bottom: 1rem;
+                }
+                .skills {
+                    justify-content: left;
+                    li {
+                        margin-left: 0;
+                        margin-right: 0.7rem;
+                    }
+                }
+                .cvdownload {
+                    font-size:1rem;
+                    padding: 0rem 1.4rem 0.5rem 1.4rem;
+                }
+                .downloadIcon {
+                    font-size: 1.5rem;
+                }
+                a {
+                    justify-content: left;
+                    width:180px;
+                }
+            }
+        }
+    }
+}
